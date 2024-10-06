@@ -16,9 +16,11 @@
    git clone https://github.com/yourusername/user-search-app.git
 
 2. Установите зависимости: 
-   npm install
+   ```bash
+  npm install
 
 3. Запустите приложение:
+   ```bash
    npm run dev
    
 ## Автор: https://github.com/eugenialt
