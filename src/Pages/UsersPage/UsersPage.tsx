@@ -37,12 +37,12 @@ const App: React.FC = () => {
       return;
     }
 
-    const lastName = input.trim().toLowerCase();
+    const searchTerm = input.trim().toLowerCase();
 
     const result = users.filter((user: { name: string }) => {
       const nameParts = user.name.toLowerCase().split(" ");
-      const userLastName = nameParts[nameParts.length - 1];
-      return userLastName.startsWith(lastName);
+      // Проверяем как имя, так и фамилию
+      return nameParts.some(part => part.startsWith(searchTerm));
     });
 
     setFilteredUsers(result);
