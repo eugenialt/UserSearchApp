@@ -1,5 +1,6 @@
 import React from "react";
 import { User } from "../User/User";
+import "../../Pages/UsersPage/UsersPage.css";
 
 interface UserListProps {
   users: { name: string; email: string; id: number; avatar: string }[];
@@ -7,7 +8,7 @@ interface UserListProps {
 
 export const UserList: React.FC<UserListProps> = ({ users }) => {
   return (
-    <div className="list">
+    <div className="user-list">
       {users.length > 0 ? (
         users.map((user) => (
           <User

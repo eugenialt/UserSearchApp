@@ -2,6 +2,8 @@ import { UserList } from "../../Components/UserList/UserList";
 import { UserSearch } from "../../Components/UserSearch/UserSearch";
 import React, { useState, useEffect } from "react";
 
+import "./UsersPage.css";
+
 const App: React.FC = () => {
   const [users, setUsers] = useState([]);
   const [filteredUsers, setFilteredUsers] = useState([]);
