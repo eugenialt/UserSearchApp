@@ -1,4 +1,5 @@
 import React from "react";
+import "./User.css";
 
 interface UserProps {
   name: string;
@@ -12,10 +13,12 @@ export const User: React.FC<UserProps> = ({ name, email, avatar }) => {
       <img
         src={avatar}
         alt={`${name}'s avatar`}
-        style={{ width: "50px", borderRadius: "50%" }}
+        className="user-avatar" 
       />
-      <h3>{name}</h3>
-      <p>{email}</p>
+      <div className="user-details">
+        <h3 className="user-name">{name}</h3>
+        <p className="user-email">{email}</p>
+      </div>
     </div>
   );
 };
