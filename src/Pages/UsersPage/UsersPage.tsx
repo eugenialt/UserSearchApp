@@ -1,5 +1,5 @@
-import { UserList } from "../Components/UserList/UserList";
-import { UserSearch } from "../Components/UserSearch/UserSearch";
+import { UserList } from "../../Components/UserList/UserList";
+import { UserSearch } from "../../Components/UserSearch/UserSearch";
 import React, { useState, useEffect } from "react";
 
 const App: React.FC = () => {
