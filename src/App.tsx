@@ -1,14 +1,7 @@
-import { User } from "./Components/User/User"
-import { UserList } from "./Components/UserList/UserList"
-import { UserSearch } from "./Components/UserSearch/UserSearch"
-
-function App() {
+import UsersPage from "./Pages/UsersPage"
+ const App = () => {
   return (
-    <>
-      <User />
-      <UserList />
-      <UserSearch />
-    </>
+    <UsersPage />
   )
 }
 
