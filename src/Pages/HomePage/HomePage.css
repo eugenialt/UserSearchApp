@@ -1,4 +1,4 @@
-/* Основной контейнер */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -9,8 +9,7 @@
     font-family: 'Arial', sans-serif;
     padding: 20px;
   }
-  
-  /* Приветственный текст */
+ 
   .welcome-text {
     font-size: 3rem;
     font-weight: bold;
@@ -20,8 +19,7 @@
     text-align: center;
     animation: fadeInDown 1s ease-in-out;
   }
-  
-  /* Стили для кнопки */
+
   .search-button {
     background: linear-gradient(45deg, #6a11cb, #2575fc);
     color: white;
@@ -38,14 +36,12 @@
     z-index: 1;
   }
   
-  /* Анимация при наведении на кнопку */
   .search-button:hover {
     transform: scale(1.1);
     background: linear-gradient(45deg, #2575fc, #6a11cb);
     box-shadow: 0px 15px 40px rgba(39, 99, 255, 0.8);
   }
   
-  /* Эффект вспышки при наведении */
   .search-button::before {
     content: "";
     position: absolute;
@@ -67,14 +63,14 @@
     transform: translate(-50%, -50%) scale(1.2);
   }
   
-  /* Текст внутри кнопки */
+ 
   .search-button span {
     position: relative;
     z-index: 1;
     font-family: 'Roboto', sans-serif;
   }
   
-  /* Анимация плавного появления текста */
+
   @keyframes fadeInDown {
     0% {
       opacity: 0;
@@ -86,21 +82,20 @@
     }
   }
   
-  /* Адаптивность для экранов мобильных устройств */
   @media (max-width: 768px) {
     .welcome-text {
-      font-size: 2rem;  /* Уменьшение шрифта на мобильных */
+      font-size: 2rem; 
       margin-bottom: 30px;
     }
   
     .search-button {
-      font-size: 1.2rem;  /* Уменьшение текста кнопки */
-      padding: 12px 40px;  /* Уменьшение отступов */
-      border-radius: 40px;  /* Немного меньший радиус на мобильных */
+      font-size: 1.2rem;  
+      padding: 12px 40px;  
+      border-radius: 40px;  
     }
   
     .search-button:hover {
-      transform: scale(1.05);  /* Немного меньшее увеличение кнопки на мобильных */
+      transform: scale(1.05);  
     }
   
     .search-button::before {
@@ -114,10 +109,10 @@
     }
   }
   
-  /* Адаптивность для очень маленьких экранов */
+ 
   @media (max-width: 480px) {
     .welcome-text {
-      font-size: 1.5rem;  /* Еще меньше для телефонов */
+      font-size: 1.5rem;  
       margin-bottom: 20px;
     }
   
